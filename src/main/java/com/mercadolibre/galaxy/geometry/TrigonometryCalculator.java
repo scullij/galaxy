@@ -1,7 +1,5 @@
 package com.mercadolibre.galaxy.geometry;
 
-import javafx.geometry.Point2D;
-
 /**
  * Created by javier.sculli on 7/10/17.
  */

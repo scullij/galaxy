@@ -7,7 +7,6 @@ import com.mercadolibre.galaxy.geometry.Triangle;
 import com.mercadolibre.galaxy.model.Galaxy;
 import com.mercadolibre.galaxy.model.Planet;
 import com.mercadolibre.galaxy.model.Sun;
-import javafx.print.PageLayout;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
