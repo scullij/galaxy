@@ -1,7 +1,5 @@
 package com.mercadolibre.galaxy.model;
 
-import com.mercadolibre.galaxy.geometry.Coordinate;
-
 import java.util.ArrayList;
 import java.util.List;
 

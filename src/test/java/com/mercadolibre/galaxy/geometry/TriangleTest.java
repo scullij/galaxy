@@ -1,8 +1,5 @@
 package com.mercadolibre.galaxy.geometry;
 
-import com.mercadolibre.galaxy.geometry.Coordinate;
-import com.mercadolibre.galaxy.geometry.Triangle;
-import javafx.geometry.Point2D;
 import org.junit.Assert;
 import org.junit.Test;
 

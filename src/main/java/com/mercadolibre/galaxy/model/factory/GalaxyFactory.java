@@ -3,7 +3,6 @@ package com.mercadolibre.galaxy.model.factory;
 import com.mercadolibre.galaxy.geometry.Coordinate;
 import com.mercadolibre.galaxy.model.Galaxy;
 import com.mercadolibre.galaxy.model.Planet;
-import com.mercadolibre.galaxy.model.Sun;
 
 /**
  * Created by javier.sculli on 7/24/17.
