@@ -20,15 +20,17 @@ public class GalaxyColinearAlignmentResolverTest {
 
         Galaxy galaxy = new Galaxy(ferengi, betasoide, vulcano);
 
-        boolean isGalaxyColinearllyAlignment = GalaxyColinearAlignmentResolver.execute(null, galaxy.getPlanets(), 90);
+        GalaxyColinearAlignmentResolver galaxyColinearAlignmentResolver = new GalaxyColinearAlignmentResolver();
+
+        boolean isGalaxyColinearllyAlignment = galaxyColinearAlignmentResolver.execute(null, galaxy.getPlanets(), 90);
 
         Assert.assertEquals(true, isGalaxyColinearllyAlignment);
 
-        isGalaxyColinearllyAlignment = GalaxyColinearAlignmentResolver.execute(null, galaxy.getPlanets(), 3);
+        isGalaxyColinearllyAlignment = galaxyColinearAlignmentResolver.execute(null, galaxy.getPlanets(), 3);
 
         Assert.assertEquals(false, isGalaxyColinearllyAlignment);
 
-        isGalaxyColinearllyAlignment = GalaxyColinearAlignmentResolver.execute(null, galaxy.getPlanets(), 180);
+        isGalaxyColinearllyAlignment = galaxyColinearAlignmentResolver.execute(null, galaxy.getPlanets(), 180);
 
         Assert.assertEquals(true, isGalaxyColinearllyAlignment);
     }

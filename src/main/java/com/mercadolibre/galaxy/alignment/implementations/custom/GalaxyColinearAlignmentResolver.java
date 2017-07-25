@@ -1,8 +1,10 @@
 package com.mercadolibre.galaxy.alignment.implementations.custom;
 
+import com.mercadolibre.galaxy.alignment.AlignmentType;
 import com.mercadolibre.galaxy.geometry.TrigonometryCalculator;
 import com.mercadolibre.galaxy.model.Planet;
 import com.mercadolibre.galaxy.model.Sun;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -10,9 +12,11 @@ import java.util.stream.Collectors;
 /**
  * Created by javier.sculli on 7/20/17.
  */
-public class GalaxyColinearAlignmentResolver {
+@Component
+public class GalaxyColinearAlignmentResolver implements ParticularAlignmentResolver {
 
-    public static boolean execute(Sun sun, List<Planet> planets, int days) {
+    @Override
+    public boolean execute(Sun sun, List<Planet> planets, int days) {
 
         List<Double> degrees = planets.stream().map( p -> p.getDegrees(days) ).collect(Collectors.toList());
 
@@ -33,6 +37,11 @@ public class GalaxyColinearAlignmentResolver {
         }
 
         return adyacents;
+    }
+
+    @Override
+    public AlignmentType forecast() {
+        return AlignmentType.ALL;
     }
 
 }

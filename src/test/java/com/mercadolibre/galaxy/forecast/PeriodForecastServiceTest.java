@@ -1,11 +1,17 @@
 package com.mercadolibre.galaxy.forecast;
 
 import com.mercadolibre.galaxy.alignment.implementations.CustomAlignmentResolver;
+import com.mercadolibre.galaxy.alignment.implementations.custom.GalaxyColinearAlignmentResolver;
+import com.mercadolibre.galaxy.alignment.implementations.custom.ParticularAlignmentResolver;
+import com.mercadolibre.galaxy.alignment.implementations.custom.PlanetColinearAlignmentResolver;
 import com.mercadolibre.galaxy.model.Galaxy;
 import com.mercadolibre.galaxy.model.factory.GalaxyFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by javier.sculli on 7/24/17.
@@ -17,7 +23,12 @@ public class PeriodForecastServiceTest {
     @Before
     public void before(){
 
-        ForecastService forecastService = new ForecastService(new CustomAlignmentResolver());
+        List<ParticularAlignmentResolver> resolvers = new ArrayList<>();
+
+        resolvers.add(new GalaxyColinearAlignmentResolver());
+        resolvers.add(new PlanetColinearAlignmentResolver());
+
+        ForecastService forecastService = new ForecastService(new CustomAlignmentResolver(resolvers));
         periodForecastService = new PeriodForecastService(forecastService);
     }
 
