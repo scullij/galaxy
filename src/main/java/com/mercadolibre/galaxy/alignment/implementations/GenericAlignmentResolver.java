@@ -7,7 +7,8 @@ import com.mercadolibre.galaxy.model.Planet;
 import com.mercadolibre.galaxy.model.Sun;
 
 import java.util.List;
-import static java.lang.Math.*;
+
+import static java.lang.Math.sin;
 
 /**
  * Created by javier.sculli on 7/18/17.

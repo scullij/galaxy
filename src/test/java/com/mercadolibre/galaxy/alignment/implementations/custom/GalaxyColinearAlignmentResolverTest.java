@@ -1,6 +1,5 @@
 package com.mercadolibre.galaxy.alignment.implementations.custom;
 
-import com.mercadolibre.galaxy.alignment.implementations.custom.GalaxyColinearAlignmentResolver;
 import com.mercadolibre.galaxy.geometry.Coordinate;
 import com.mercadolibre.galaxy.model.Galaxy;
 import com.mercadolibre.galaxy.model.Planet;

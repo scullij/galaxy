@@ -1,10 +1,7 @@
 package com.mercadolibre.galaxy.forecast;
 
 import com.mercadolibre.galaxy.alignment.implementations.CustomAlignmentResolver;
-import com.mercadolibre.galaxy.geometry.Coordinate;
 import com.mercadolibre.galaxy.model.Galaxy;
-import com.mercadolibre.galaxy.model.Planet;
-import com.mercadolibre.galaxy.model.Sun;
 import com.mercadolibre.galaxy.model.factory.GalaxyFactory;
 import org.junit.Assert;
 import org.junit.Before;

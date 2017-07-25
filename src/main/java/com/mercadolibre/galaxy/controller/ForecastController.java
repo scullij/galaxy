@@ -1,6 +1,6 @@
 package com.mercadolibre.galaxy.controller;
 
-import com.mercadolibre.galaxy.repository.ForecastRespository;
+import com.mercadolibre.galaxy.repository.ForecastRepository;
 import com.mercadolibre.galaxy.repository.ForecastResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ForecastController {
 
     @Autowired
-    ForecastRespository forecastRespository;
+    ForecastRepository forecastRespository;
 
     @RequestMapping()
     public ForecastResult getForecastByDay(@RequestParam("day") Integer day) {
