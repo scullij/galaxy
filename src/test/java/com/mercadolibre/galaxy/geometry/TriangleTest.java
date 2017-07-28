@@ -41,15 +41,12 @@ public class TriangleTest {
 
        Assert.assertTrue(triangle.contains(coordinate));
 
-
        //ASSERRT ADYANCENTS
        point1 = new Coordinate(5,0);
        point2 = new Coordinate(3,0);
        point3 = new Coordinate(1,0);
 
        triangle = new Triangle(point1, point2, point3);
-
-       System.out.println(triangle.isValid());
 
        coordinate = new Coordinate(0,0);
 

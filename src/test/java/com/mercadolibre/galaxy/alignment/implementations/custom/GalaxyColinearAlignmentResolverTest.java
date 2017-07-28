@@ -12,7 +12,7 @@ import org.junit.Test;
 public class GalaxyColinearAlignmentResolverTest {
 
     @Test
-    public void test(){
+    public void galaxy_colinear_alignment_test(){
 
         Planet ferengi = new Planet("Ferengi", 1, new Coordinate(500,0), 500);
         Planet betasoide = new Planet("Betasoide", 3, new Coordinate(2000,0), 2000);

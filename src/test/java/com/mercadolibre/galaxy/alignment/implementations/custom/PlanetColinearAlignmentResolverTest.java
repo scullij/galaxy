@@ -38,19 +38,4 @@ public class PlanetColinearAlignmentResolverTest {
         Assert.assertEquals(false, arePlanetsColinearllyAlignment);
     }
 
-    @Test
-    public void collinear_planets_test(){
-
-        for (int i = 0; i < 365; i++) {
-
-            boolean arePlanetsColinearllyAlignment = planetColinearAlignmentResolver.execute(new Sun(), galaxy.getPlanets(), i);
-
-            if( arePlanetsColinearllyAlignment ){
-                //System.out.println(i);
-            }
-        }
-
-        //Assert.assertEquals(false, arePlanetsColinearllyAlignment);
-    }
-
 }
